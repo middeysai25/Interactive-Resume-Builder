@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <!-- Form Section -->
+  <div class="form-section">
+    <h2>Fill Your Details</h2>
+    <form id="resume-form">
+      <label>Name:</label>
+      <input type="text" id="name">
+
+      <label>Email:</label>
+      <input type="email" id="email">
+
+      <label>Phone Number:</label>
+      <input type="text" id="phone">
+
+      <label>Profile Summary:</label>
+      <textarea id="summary"></textarea>
+
+      <h3>Education</h3>
+      <div id="education-section">
+        <div class="edu-item">
+          <input type="text" placeholder="Degree, School, Year" class="edu-input">
+        </div>
+      </div>
+      <button type="button" id="add-education">+ Add Education</button>
+
+      <h3>Skills</h3>
+      <input type="text" id="skills" placeholder="Comma-separated skills">
+
+      <h3>Experience</h3>
+      <div id="experience-section">
+        <div class="exp-item">
+          <input type="text" placeholder="Job, Company, Year" class="exp-input">
+        </div>
+      </div>
+      <button type="button" id="add-experience">+ Add Experience</button>
+
+      <div class="form-buttons">
+        <button type="reset" id="clear-form">Clear</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Resume Preview -->
+  <div class="resume-preview">
+    <h2 id="preview-name">Your Name</h2>
+    <p id="preview-email"></p>
+    <p id="preview-phone"></p>
+    <h3>Profile Summary</h3>
+    <p id="preview-summary"></p>
+
+    <h3>Education</h3>
+    <ul id="preview-education"></ul>
+
+    <h3>Skills</h3>
+    <ul id="preview-skills"></ul>
+
+    <h3>Experience</h3>
+    <ul id="preview-experience"></ul>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
